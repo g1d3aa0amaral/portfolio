@@ -35,7 +35,9 @@ Infraestrutura & Resiliência. Diagramas e justificativas de topologia de rede p
 | **Integração & ETL** | Azure Data Factory (ADF), SQL Server Integration Services (SSIS), Python |
 | **Infraestrutura** | Linux, PowerShell, Network Engineering, High Availability (HA) |
 
-# ###########################################################################################################################
+
+***##########
+
 
 # Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
 
