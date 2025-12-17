@@ -1,4 +1,4 @@
-# 🚀 Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
+# Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
 
 ### De Sistemas de Controle Crítico (HA) para Administração de Dados Críticos (HA)
 
@@ -8,7 +8,7 @@ Este portfólio demonstra minhas habilidades transferíveis em **Data Migration,
 
 **Foco:** **Data Integration** (ETL/ELT), **Resilience (HA)** e **Performance Tuning** em ambientes Multi-Cloud.
 
-* PROJETOS
+### PROJETOS
 
 1. Migração de BD Termelétrica para Multi-Cloud (Azure/OCI)	HA & Migração. Demonstração prática de lift-and-shift de dados Oracle e SQL Server para serviços gerenciados na Nuvem (OCI Autonomous DB & Azure SQL DB).	Oracle, SQL Server, OCI, Azure, ADF/SSIS, T-SQL.
 
@@ -16,7 +16,7 @@ Este portfólio demonstra minhas habilidades transferíveis em **Data Migration,
 
 3. Network Design para Alta Disponibilidade Industrial	Infraestrutura & Resiliência. Diagramas e justificativas de topologia de rede para garantir resiliência e baixa latência.	Network Engineering, Network Design, High Availability, TCP/IP.
 
-## 🛠️ Tech Stack Principal
+## Tech Stack Principal
 
 | Categoria | Tecnologias Utilizadas no Portfólio |
 | :--- | :--- |
