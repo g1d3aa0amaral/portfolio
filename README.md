@@ -8,6 +8,8 @@ Este portfólio demonstra minhas habilidades transferíveis em **Data Migration,
 
 **Foco:** **Data Integration** (ETL/ELT), **Resilience (HA)** e **Performance Tuning** em ambientes Multi-Cloud.
 
+---
+
 ## PROJETOS
 
 **1. Migração de BD Termelétrica para Multi-Cloud (Azure/OCI)	HA & Migração**
@@ -28,6 +30,8 @@ Infraestrutura & Resiliência. Diagramas e justificativas de topologia de rede p
    
 *Tech: Network Engineering, Network Design, High Availability, TCP/IP.
 
+---
+
 ## Tech Stack Principal
 
 | Categoria | Tecnologias Utilizadas no Portfólio |
@@ -37,8 +41,7 @@ Infraestrutura & Resiliência. Diagramas e justificativas de topologia de rede p
 | **Integração & ETL** | Azure Data Factory (ADF), SQL Server Integration Services (SSIS), Python |
 | **Infraestrutura** | Linux, PowerShell, Network Engineering, High Availability (HA) |
 
----
----
+*#############################################################################################################################################################################################################################################################################
 
 # Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
 
