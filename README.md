@@ -1,6 +1,5 @@
 # Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
 
-### De Sistemas de Controle Crítico (HA) para Administração de Dados Críticos (HA)
 ### From Critical Control Systems (HA) to Critical Data Administration (HA)
 
  [Português](#português) | [English](#english)
