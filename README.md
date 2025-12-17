@@ -36,7 +36,7 @@ Infraestrutura & Resiliência. Diagramas e justificativas de topologia de rede p
 | **Infraestrutura** | Linux, PowerShell, Network Engineering, High Availability (HA) |
 
 
-* ########## *
+* ##########
 
 
 # Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
