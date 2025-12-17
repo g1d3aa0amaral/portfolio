@@ -41,9 +41,6 @@ Diagrams and justifications for network topology to ensure resilience and low la
 | **Infrastructure** | Linux, PowerShell, Network Engineering, High Availability (HA) |
 
 ---
-
----
-
 ---
 
 <a name="português"></a>
