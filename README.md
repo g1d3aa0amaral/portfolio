@@ -1,6 +1,12 @@
 # Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
 
 ### De Sistemas de Controle Crítico (HA) para Administração de Dados Críticos (HA)
+### From Critical Control Systems (HA) to Critical Data Administration (HA)
+
+ [Português](#português) | [English](#english)
+
+<a name="português"></a>
+## 🇧🇷 Português
 
 Sou um profissional com 18 anos de experiência na Engenharia de Sistemas Críticos e Automação (O&G e Energia), com foco em Alta Disponibilidade (HA), Integração Multi-Protocolo e Otimização de Infraestrutura.
 
@@ -35,13 +41,14 @@ Infraestrutura & Resiliência. Diagramas e justificativas de topologia de rede p
 | **Integração & ETL** | Azure Data Factory (ADF), SQL Server Integration Services (SSIS), Python |
 | **Infraestrutura** | Linux, PowerShell, Network Engineering, High Availability (HA) |
 
-
-<hr>
-
+---
+---
+---
 
 # Cloud DBA & Data Engineering Portfolio | Multi-Cloud Focus (Azure & OCI)
 
-### From Critical Control Systems (HA) to Critical Data Administration (HA)
+<a name="english"></a>
+## 🇺🇸 English
 
 I am a professional with 18 years of experience in Critical Systems Engineering and Automation (O&G and Energy), focused on High Availability (HA), Multi-Protocol Integration, and Infrastructure Optimization.
 
