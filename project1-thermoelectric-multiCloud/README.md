@@ -4,7 +4,7 @@
 
 <a name="english"></a>
 ## 🇺🇸 English
-###Overview
+###Overview###
 This project simulates the data ecosystem of a gas-fired thermoelectric power plant. The challenge was to design a database architecture capable of handling high volumes of sensor data, ensuring integrity for performance analysis, safety, and predictive maintenance.
 
 ###Architecture & Infrastructure
