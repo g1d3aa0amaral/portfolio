@@ -48,9 +48,3 @@ Integração Heterogênea: Configuração de listener.ora, tnsnames.ora e init.o
 Automação (Triggers): Desenvolvimento de gatilhos para calcular automaticamente a duração de falhas e KPIs operacionais.
 
 Otimização de Performance: Criação estratégica de índices para otimizar consultas complexas envolvendo correlações de vibração, temperatura e geração de energia.
-
-
-/docs: Original project documentation and presentation.
-
-
-Adicione os prints (MER e Arquitetura) na pasta /docs ou /diagrams e atualize os links das imagens no texto.
