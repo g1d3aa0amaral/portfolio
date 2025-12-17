@@ -4,10 +4,10 @@
 -- Author: Gideao Amaral
 -- =============================================================================
 
--- Switching context to PDB
+-- alter session from CBD to PDB
 ALTER SESSION SET CONTAINER = PDB_PROJETO_DE_BLOCO;
 
--- 1. BASE TABLES (EQUIPMENT & ADMINISTRATION)
+-- 1. BASE TABLES (EQUIPMENT & ADM)
 --------------------------------------------------------------------------------
 
 CREATE TABLE equipamento (
@@ -35,7 +35,7 @@ CREATE TABLE usuario (
     CONSTRAINT PK_id_usuario PRIMARY KEY (id_usuario)
 );
 
--- 2. EQUIPMENT SUB-LEVELS (SENSORS & MANAGEMENT)
+-- 2. STATUS AND READING (SENSORS & REPORT)
 --------------------------------------------------------------------------------
 
 CREATE TABLE sensor (
@@ -59,7 +59,7 @@ CREATE TABLE equipamento_relatorio (
         REFERENCES relatorio (id_relatorio)
 );
 
--- 3. OPERATIONAL LOGS & KPIs
+-- 3. MEASUREMENT & KPIs
 --------------------------------------------------------------------------------
 
 CREATE TABLE medicao (
@@ -94,7 +94,7 @@ CREATE TABLE desempenho (
         REFERENCES equipamento (id_equipamento)
 );
 
--- 4. INCIDENT & MAINTENANCE MANAGEMENT
+-- 4. ALARM, TRIP & MAINTENANCE
 --------------------------------------------------------------------------------
 
 CREATE TABLE falha (
@@ -103,7 +103,7 @@ CREATE TABLE falha (
     descricao_falha        VARCHAR2(50),
     timestamp_inicio_falha TIMESTAMP,
     timestamp_fim_falha    TIMESTAMP,
-    duracao_minutos        NUMBER(10,2), -- Coluna para cálculo automático via Trigger
+    duracao_minutos        NUMBER(10,2), -- calculation via Trigger
     CONSTRAINT PK_id_falha PRIMARY KEY (id_falha),
     CONSTRAINT FK_falha_id_equipamento FOREIGN KEY (id_equipamento) 
         REFERENCES equipamento (id_equipamento)
@@ -130,16 +130,29 @@ CREATE TABLE alerta (
         REFERENCES sensor (id_sensor)
 );
 
--- 5. BUSINESS LOGIC (TRIGGER)
+-- 5. OPERATIONAL LOGIC (TRIGGER)
 --------------------------------------------------------------------------------
 
 CREATE OR REPLACE TRIGGER TRG_CALC_DURACAO_FALHA
-BEFORE INSERT OR UPDATE ON falha
+BEFORE INSERT OR UPDATE OF timestamp_fim_falha ON falha
 FOR EACH ROW
+DECLARE
+    v_duracao_interval INTERVAL DAY(9) TO SECOND(6);
+    v_total_minutos     NUMBER(10,2);
 BEGIN
-    IF :NEW.timestamp_fim_falha IS NOT NULL THEN
-        -- Cálculo da duração em minutos para relatórios de KPI de Disponibilidade
-        :NEW.duracao_minutos := (CAST(:NEW.timestamp_fim_falha AS DATE) - CAST(:NEW.timestamp_inicio_falha AS DATE)) * 24 * 60;
+    -- check whether both are not null
+    IF :NEW.timestamp_inicio_falha IS NOT NULL AND :NEW.timestamp_fim_falha IS NOT NULL THEN
+        
+        -- take the intervall between beginning and ending
+        v_duracao_interval := :NEW.timestamp_fim_falha - :NEW.timestamp_inicio_falha;
+        
+        -- extract time components and, from this, compute the fail duration
+        v_total_minutos := (EXTRACT(DAY FROM v_duracao_interval) * 24 * 60) +
+                           (EXTRACT(HOUR FROM v_duracao_interval) * 60) +
+                           (EXTRACT(MINUTE FROM v_duracao_interval)) +
+                           (EXTRACT(SECOND FROM v_duracao_interval) / 60);
+                           
+        :NEW.duracao_minutos := v_total_minutos;
     END IF;
 END;
 /
