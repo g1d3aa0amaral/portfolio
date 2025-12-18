@@ -1,4 +1,4 @@
-# -- SqlServer address and database (file on Gateway server - Windows VM - to let oracle knowing database to connect to)
+# -- SqlServer address and database (file on Gateway server - Windows VM - point out to SqlServer on Docker Container)
 # HS init parameters
 # Path: $ORACLE_HOME/dg4msql/admin/
 #
