@@ -1,17 +1,19 @@
 ```mermaid
 
 graph LR
-    subgraph "Oracle Server (Linux VM)"
-    DB[(Oracle 19c PDB)]
+    subgraph "Ambiente Oracle (Linux)"
+    DB[(Oracle 19c PDB)] --> TNS[TNSNAMES.ORA]
     end
 
-    subgraph "Oracle Database Gateway (Windows VM)"
-    DB[(Oracle Database Gateway)]
+    subgraph "Servidor Gateway (Windows VM)"
+    TNS --> LIS[LISTENER / dg4msql]
+    LIS --> INIT[initSQLSERVER.ora]
     end
 
-    subgraph "SQL Server (Docker Container)"
+    subgraph "Destino (Docker)"
     INIT --> SQL[(SQL Server DB)]
     end
 
-    style DB fill:#f96,stroke:#333,stroke-width:2px
-    style SQL fill:#0078d4,stroke:#333,stroke-width:2px
+    %% Cores para destacar as tecnologias
+    style DB fill:#f9f,stroke:#333,stroke-width:2px
+    style SQL fill:#0078d4,stroke:#fff,stroke-width:2px,color:#fff
