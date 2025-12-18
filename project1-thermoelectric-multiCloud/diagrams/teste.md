@@ -1,3 +1,4 @@
+mermaid
 
 graph LR
     subgraph "Origem: Oracle (Linux VM)"
