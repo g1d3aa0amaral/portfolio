@@ -2,7 +2,7 @@
 
 graph LR
     subgraph "Ambiente Oracle (Linux)"
-    DB[(Oracle 19c PDB)] --> TNS[TNSNAMES.ORA]
+    DB[(Oracle 19c PDB)]
     end
 
     subgraph "Servidor Gateway (Windows VM)"
@@ -11,7 +11,7 @@ graph LR
     end
 
     subgraph "Destino (Docker)"
-    INIT --> SQL[(SQL Server DB)]
+    SQL[(SQL Server DB)]
     end
 
     %% Cores para destacar as tecnologias
