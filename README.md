@@ -21,7 +21,7 @@ This portfolio demonstrates my transferable skills in **Data Migration, Systems 
 A practical demonstration of lift-and-shift migration of Oracle and SQL Server data to Cloud managed services (OCI Autonomous DB & Azure SQL DB).
 *Tech: Oracle, SQL Server, OCI, Azure, ADF/SSIS, T-SQL.*
 
-**Access Repository:** [https://github.com/g1d3aa0/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0/oracle-sqlserver-integration-thermoelectric)
+**Access Repository:** [https://github.com/g1d3aa0/portfolio/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0/portfolio/oracle-sqlserver-integration-thermoelectric)
 
 **2. Control and Supervision Architecture (SCADA/DB) | Integration & Data Flow**
 Details of the architecture (ISA 95) and data flow from sensors to the database. Justification for HA requirements at the database level.
