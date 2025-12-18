@@ -1,1 +1,9 @@
-
+# -- SqlServer Address (file on Linux VM to let Oracle knowing where to connect to)
+SQLSERVER_DESTINO_GW = 
+  (DESCRIPTION = 
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 169.254.***.***)(PORT = 1521))  
+    (CONNECT_DATA = 
+      (SID = SQLSERVER)
+    ) 
+    (HS = OK)
+  )
