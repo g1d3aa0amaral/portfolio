@@ -1,4 +1,4 @@
-# -- Listener Address
+# -- Listener Address and Service (file on Gateway server - Windows VM - to receive Oracle request)
 LISTENER =
  (DESCRIPTION_LIST =
    (DESCRIPTION =
@@ -6,7 +6,6 @@ LISTENER =
    )
   )
 
-# -- Gateway Service
 SID_LIST_LISTENER =
  (SID_LIST =
    (SID_DESC =
