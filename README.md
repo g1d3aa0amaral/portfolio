@@ -21,7 +21,7 @@ This portfolio demonstrates my transferable skills in **Data Migration, Systems 
 A practical demonstration of lift-and-shift migration of Oracle and SQL Server data to Cloud managed services (OCI Autonomous DB & Azure SQL DB).
 *Tech: Oracle, SQL Server, OCI, Azure, ADF/SSIS, T-SQL.*
 
-**Access Repository:** [https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric)
+[https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric)
 
 **2. Control and Supervision Architecture (SCADA/DB) | Integration & Data Flow**
 Details of the architecture (ISA 95) and data flow from sensors to the database. Justification for HA requirements at the database level.
@@ -62,7 +62,7 @@ Este portfólio demonstra minhas habilidades transferíveis em **Data Migration,
 Demonstração prática de lift-and-shift de dados Oracle e SQL Server para serviços gerenciados na Nuvem (OCI Autonomous DB & Azure SQL DB).
 *Tech: Oracle, SQL Server, OCI, Azure, ADF/SSIS, T-SQL.*
 
-**Access Repository:** [https://github.com/seu-usuario/oracle-sqlserver-integration-thermoelectric](https://github.com/seu-usuario/oracle-sqlserver-integration-thermoelectric)
+[https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric)
 
 **2. Arquitetura de Controle e Supervisão (SCADA/BD)**
 Integração & Fluxo de Dados. Detalhamento da arquitetura (ISA 95) e do fluxo de dados desde o sensor até o banco de dados. Justificativa para os requisitos de HA no nível de BD.  
