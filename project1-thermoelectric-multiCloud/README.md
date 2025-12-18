@@ -25,6 +25,10 @@ Automation (Triggers): Developed triggers to automatically calculate failure dur
 
 Performance Optimization: Strategic creation of indexes to optimize complex queries involving vibration, temperature, and power generation correlations.
 
+### 📊 Diagrams / Diagramas
+![Integration Architecture](./diagrams/integration_architecture.jpeg)
+![MER Plant](./diagrams/mer_plant.png)
+
 <a name="português"></a>
 ## 🇧🇷 Português
 
@@ -48,3 +52,7 @@ Integração Heterogênea: Configuração de listener.ora, tnsnames.ora e init.o
 Automação (Triggers): Desenvolvimento de gatilhos para calcular automaticamente a duração de falhas e KPIs operacionais.
 
 Otimização de Performance: Criação estratégica de índices para otimizar consultas complexas envolvendo correlações de vibração, temperatura e geração de energia.
+
+### 📊 Diagrams / Diagramas
+![Integration Architecture](./diagrams/integration_architecture.jpeg)
+![MER Plant](./diagrams/mer_plant.png)
