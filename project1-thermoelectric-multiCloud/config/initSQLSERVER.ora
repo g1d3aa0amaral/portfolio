@@ -1,3 +1,4 @@
+# -- SqlServer address and database to connect to
 # HS init parameters
 # Path: $ORACLE_HOME/dg4msql/admin/
 #
