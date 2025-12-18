@@ -25,7 +25,7 @@ Automation (Triggers): Developed triggers to automatically calculate failure dur
 
 Performance Optimization: Strategic creation of indexes to optimize complex queries involving vibration, temperature, and power generation correlations.
 
-### 📊 Diagrams / Diagramas
+### Architecture
 ![Integration Architecture](./diagrams/integration_architecture.jpeg)
 ![MER Plant](./diagrams/mer_plant.png)
 
@@ -53,6 +53,6 @@ Automação (Triggers): Desenvolvimento de gatilhos para calcular automaticament
 
 Otimização de Performance: Criação estratégica de índices para otimizar consultas complexas envolvendo correlações de vibração, temperatura e geração de energia.
 
-### 📊 Diagrams / Diagramas
+### Architecture
 ![Integration Architecture](./diagrams/integration_architecture.jpeg)
 ![MER Plant](./diagrams/mer_plant.png)
