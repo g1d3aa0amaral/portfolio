@@ -20,7 +20,6 @@ This portfolio demonstrates my transferable skills in **Data Migration, Systems 
 **1. Thermoelectric DB Migration to Multi-Cloud (Azure/OCI) | HA & Migration**
 A practical demonstration of lift-and-shift migration of Oracle and SQL Server data to Cloud managed services (OCI Autonomous DB & Azure SQL DB).
 *Tech: Oracle, SQL Server, OCI, Azure, ADF/SSIS, T-SQL.*
-
 [https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric)
 
 **2. Control and Supervision Architecture (SCADA/DB) | Integration & Data Flow**
@@ -61,7 +60,6 @@ Este portfólio demonstra minhas habilidades transferíveis em **Data Migration,
 **1. Migração de BD Termelétrica para Multi-Cloud (Azure/OCI)	HA & Migração**
 Demonstração prática de lift-and-shift de dados Oracle e SQL Server para serviços gerenciados na Nuvem (OCI Autonomous DB & Azure SQL DB).
 *Tech: Oracle, SQL Server, OCI, Azure, ADF/SSIS, T-SQL.*
-
 [https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric](https://github.com/g1d3aa0amaral/portfolio/tree/main/oracle-sqlserver-integration-thermoelectric)
 
 **2. Arquitetura de Controle e Supervisão (SCADA/BD)**
