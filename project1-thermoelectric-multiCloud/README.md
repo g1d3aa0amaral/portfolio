@@ -27,7 +27,6 @@ Performance Optimization: Strategic creation of indexes to optimize complex quer
 
 ### Architecture
 ![Integration Architecture](./diagrams/integration_architecture.jpeg)
-![MER Plant](./diagrams/mer_plant.png)
 
 <a name="português"></a>
 ## 🇧🇷 Português
@@ -53,6 +52,5 @@ Automação (Triggers): Desenvolvimento de gatilhos para calcular automaticament
 
 Otimização de Performance: Criação estratégica de índices para otimizar consultas complexas envolvendo correlações de vibração, temperatura e geração de energia.
 
-### Architecture
+### Arquitetura
 ![Integration Architecture](./diagrams/integration_architecture.jpeg)
-![MER Plant](./diagrams/mer_plant.png)
