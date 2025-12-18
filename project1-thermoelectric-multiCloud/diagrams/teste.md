@@ -1,16 +1,15 @@
 ```mermaid
 
 graph LR
-    subgraph "Origem: Oracle (Linux VM)"
-    DB[(Oracle 19c PDB)] --> TNS[TNSNAMES.ORA]
+    subgraph "Oracle Server (Linux VM)"
+    DB[(Oracle 19c PDB)]
     end
 
-    subgraph "Intermediário: Gateway (Windows VM)"
-    TNS --> LIS[LISTENER / dg4msql]
-    LIS --> INIT[initSQLSERVER.ora]
+    subgraph "Oracle Database Gateway (Windows VM)"
+    DB[(Oracle Database Gateway)]
     end
 
-    subgraph "Destino: SQL Server (Docker)"
+    subgraph "SQL Server (Docker Container)"
     INIT --> SQL[(SQL Server DB)]
     end
 
