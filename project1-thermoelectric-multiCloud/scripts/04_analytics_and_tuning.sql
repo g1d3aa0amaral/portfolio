@@ -34,27 +34,22 @@ WHERE s.variavel_sensor = 'Temperatura'
 ORDER BY m.valor_medicao DESC, d.consumo_gas ASC
 FETCH FIRST 50 ROWS ONLY;
 
--- 2. PERFORMANCE TUNING (The DBA "Touch")
+-- 2. PERFORMANCE TUNING (Indexes)
 --------------------------------------------------------------------------------
 
--- Scenario: Searching for specific measurements in a 1M record table
--- Query before Indexing:
+-- Search before index
 SET TIMING ON;
 SELECT count(*) FROM medicao WHERE status_medicao = 'AL';
--- Note: This likely performs a FULL TABLE SCAN.
+SET TIMING OFF;
 
--- Creating Indexes to optimize search and joins
--- B-Tree Index for status filtering
+-- Index for search
 CREATE INDEX idx_medicao_status ON medicao(status_medicao);
 
--- Composite Index for time-based analysis (Common in industrial trends)
--- (Assuming we add a timestamp to medicao as discussed)
--- CREATE INDEX idx_medicao_time ON medicao(timestamp_med);
-
--- Index for Foreign Keys (Best Practice to avoid deadlocks and speed up Joins)
+-- Index for most frequent/join/FK
 CREATE INDEX idx_medicao_sensor ON medicao(id_sensor);
 CREATE INDEX idx_falha_equip ON falha(id_equipamento);
 
--- Query after Indexing:
+-- Search after index
+SET TIMING ON;
 SELECT count(*) FROM medicao WHERE status_medicao = 'AL';
 SET TIMING OFF;
