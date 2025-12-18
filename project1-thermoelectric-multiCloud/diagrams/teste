@@ -1,0 +1,13 @@
+graph LR
+    subgraph "Ambiente Oracle (Linux)"
+    DB[Oracle 19c PDB] --> TNS[TNSNAMES.ORA]
+    end
+
+    subgraph "Servidor Gateway (Windows VM)"
+    TNS --> LIS[LISTENER / dg4msql]
+    LIS --> INIT[initSQLSERVER.ora]
+    end
+
+    subgraph "Destino (Docker)"
+    INIT --> SQL[SQL Server DB]
+    end
