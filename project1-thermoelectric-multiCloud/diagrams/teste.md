@@ -1,4 +1,4 @@
-mermaid```
+
 graph LR
     subgraph "Origem: Oracle (Linux VM)"
     DB[(Oracle 19c PDB)] --> TNS[TNSNAMES.ORA]
@@ -15,4 +15,3 @@ graph LR
 
     style DB fill:#f96,stroke:#333,stroke-width:2px
     style SQL fill:#0078d4,stroke:#333,stroke-width:2px
-```
